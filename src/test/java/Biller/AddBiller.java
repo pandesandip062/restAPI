@@ -15,6 +15,8 @@ import static io.restassured.RestAssured.given;
 
 public class AddBiller {
 
+    public Response response;
+    public ResponseBody responsebody;
     HashMap hashmap = new HashMap();
     @Test
     public  void Add_Biller(){
@@ -31,19 +33,22 @@ public class AddBiller {
 //          "  \"nickname\": \"rushi1\"\n" +
 //          "}";
                 hashmap.put("vendorId","110");
-                hashmap.put("vendorMemberAccount","0000701220");
+                hashmap.put("vendorMemberAccount","0000101220");
                 hashmap.put("nickname","rushi1");
 
-        Response response = httprequest.body(hashmap).post("/bill-payment/payee");
-        ResponseBody responsebody = response.getBody();
+         response = httprequest.body(hashmap).post("/bill-payment/payee");
+         responsebody = response.getBody();
         String resopnse1= responsebody.asString();
         System.out.println(resopnse1);
-
-        int statuscode = response.getStatusCode();
-        Assert.assertEquals(200,statuscode);
-
 
 
 
     }
+
+    @Test
+    public void test2(){
+        int statuscode = response.getStatusCode();
+        Assert.assertEquals(200,statuscode);
+    }
+
 }
