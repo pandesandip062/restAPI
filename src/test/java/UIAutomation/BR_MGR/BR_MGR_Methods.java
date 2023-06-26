@@ -59,13 +59,13 @@ public class BR_MGR_Methods {
     }
     public void viewClient() throws InterruptedException {
             ap = new AccssPOM(driver);
-            ap.username("BRMGR_User");
+            ap.username("84901001");
             ap.pass("Mambu@1234");
             ap.login();
             ap.selectBranch();
             Thread.sleep(2000);
-            ap.serchuser("dele");
-            Thread.sleep(2000);
+            ap.serchuser("ACU");
+            Thread.sleep(4000);
             ap.Selectuser();
 
 
@@ -78,16 +78,15 @@ public class BR_MGR_Methods {
 
     public void editClient() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
+        Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(4000);
-        ap.serchuser("dele");
-        Thread.sleep(2000);
+        ap.serchuser("ACU");
+        Thread.sleep(4000);
         ap.Selectuser();
-        ap.editClientCTA();
-        ap.editClientCTA();
         ap.editClient();
 
 
@@ -95,26 +94,26 @@ public class BR_MGR_Methods {
 
     public void viewTask() throws InterruptedException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(2000);
         ap.selectBranch();
         Thread.sleep(4000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(2000);
         ap.Selectuser();
         ap.viewTask();
     }
     public void editTask() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         ap.viewTask();
@@ -123,13 +122,13 @@ public class BR_MGR_Methods {
     }
     public void CreateTask() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
@@ -140,13 +139,13 @@ public class BR_MGR_Methods {
     }
     public void deleteClient() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
@@ -156,13 +155,13 @@ public class BR_MGR_Methods {
     }
     public void approveClient() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
@@ -172,13 +171,13 @@ public class BR_MGR_Methods {
     }
     public void rejectClient() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
@@ -188,13 +187,13 @@ public class BR_MGR_Methods {
     }
     public void blacklistClient() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
@@ -204,13 +203,13 @@ public class BR_MGR_Methods {
     }
     public void exitClient() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
@@ -220,13 +219,13 @@ public class BR_MGR_Methods {
     }
     public void undoStateClient() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
@@ -236,22 +235,22 @@ public class BR_MGR_Methods {
     }
     public void ClientState() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
         Thread.sleep(5000);
-        ap.serchuser("dele");
+        ap.serchuser("ACU");
         Thread.sleep(5000);
         ap.Selectuser();
         Thread.sleep(5000);
         ap.editClient();
-        ap.ClientStateCTA();
+        //ap.ClientStateCTA();
     }
     public void viewGroupDetails() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
@@ -263,7 +262,7 @@ public class BR_MGR_Methods {
     }
     public void editGroupDetails() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
@@ -276,7 +275,7 @@ public class BR_MGR_Methods {
     }
     public void deleteGroupDetails() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
@@ -292,7 +291,7 @@ public class BR_MGR_Methods {
     }
     public void createGroupDetails() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
@@ -318,7 +317,7 @@ public class BR_MGR_Methods {
 
     public void CreateReport() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
@@ -330,7 +329,7 @@ public class BR_MGR_Methods {
     }
     public void editReport() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
@@ -344,7 +343,7 @@ public class BR_MGR_Methods {
     }
     public void historicalReport() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
@@ -363,11 +362,12 @@ public class BR_MGR_Methods {
     }
     public void deleteReport() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);
         ap.selectBranch();
+
         Thread.sleep(5000);
         ap.ReprotingCTA();
         Thread.sleep(2000);
@@ -377,7 +377,7 @@ public class BR_MGR_Methods {
     }
     public void viewReport() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
-        ap.username("BRMGR_User");
+        ap.username("84901001");
         ap.pass("Mambu@1234");
         ap.login();
         Thread.sleep(5000);

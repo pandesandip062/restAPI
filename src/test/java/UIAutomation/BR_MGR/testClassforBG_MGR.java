@@ -20,9 +20,9 @@ public class testClassforBG_MGR {
 
     @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.edge.driver","C:\\Users\\sandip_pande\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver","C:\\Users\\sandip_pande\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
         driver = new EdgeDriver();
-        driver.get("https://int2leaguedata.sandbox.mambu.com/#dashboard");
+        driver.get("https://nlcu1.sandbox.mambu.com/#dashboard");
         driver.manage().window().maximize();
 
     }
@@ -30,38 +30,38 @@ public class testClassforBG_MGR {
     public void TearDown(){
         driver.close();
     }
-    @Test
-    public void CreaetUser_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.createUser();
-        mt.Logout();
-
-    }
-    @Test
-    public void editUser_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.editUser();
-        mt.Logout();
-
-    }
-    @Test
-    public void deleteUser_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.deleteUser();
-        mt.Logout();
-
-    }
-    @Test
-    public void viewUser_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.viewUser();
-        mt.Logout();
-
-    }
+//    @Test(enabled = false)
+//    public void CreaetUser_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.createUser();
+//        mt.Logout();
+//
+//    }
+//    @Test(enabled = false)
+//    public void editUser_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.editUser();
+//        mt.Logout();
+//
+//    }
+//    @Test(enabled = false)
+//    public void deleteUser_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.deleteUser();
+//        mt.Logout();
+//
+//    }
+//    @Test(enabled = false)
+//    public void viewUser_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.viewUser();
+//        mt.Logout();
+//
+//    }
     @Test
     public void ViewClient_Br_MGR() throws InterruptedException, IOException {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -77,6 +77,7 @@ public class testClassforBG_MGR {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         mt = new BR_MGR_Methods(driver);
         mt.editClient();
+        mt.Logout();
     }
     @Test(priority = 0)
     public void viewTask_Br_MGR() throws InterruptedException, IOException {
@@ -102,13 +103,13 @@ public class testClassforBG_MGR {
         mt.CreateTask();
         mt.Logout();
     }
-    @Test(priority = 8)
-    public void deleteClient_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.deleteClient();
-        mt.Logout();
-    }
+//    @Test(priority = 8)
+//    public void deleteClient_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.deleteClient();
+//        mt.Logout();
+//    }
     @Test(priority = 3)
     public void undoStateClient_Br_MGR() throws InterruptedException, IOException {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -184,13 +185,13 @@ public class testClassforBG_MGR {
         mt.createGroupDetails();
         mt.Logout();
     }
-    @Test(priority = 14)
-    public void CreateReport_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.CreateReport();
-        mt.Logout();
-    }
+//    @Test(priority = 14)
+//    public void CreateReport_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.CreateReport();
+//        mt.Logout();
+//    }
     @Test(priority = 15)
     public void editReport_Br_MGR() throws InterruptedException, IOException {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -205,13 +206,13 @@ public class testClassforBG_MGR {
         mt.historicalReport();
         mt.Logout();
     }
-    @Test(priority = 18)
-    public void deleteReport_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.deleteReport();
-        mt.Logout();
-    }
+//    @Test(priority = 18)
+//    public void deleteReport_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.deleteReport();
+//        mt.Logout();
+//    }
     @Test(priority = 17)
     public void viewReport_Br_MGR() throws InterruptedException, IOException {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

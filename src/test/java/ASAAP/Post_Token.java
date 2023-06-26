@@ -16,7 +16,7 @@ public class Post_Token {
         RestAssured.baseURI = "https://np-api.leaguedata.ca:443/int1/asapp-eapi/v1";
 
 
-        RequestSpecification httprequest = RestAssured.given().header("Username","asapp-user").header("Password","secret@123").header("client_secret", "33C394254542453b839eCe485C4f055b").header("cuId", "2").header("Authorization", "Basic YXNhcHAtdXNlcjpzZWNyZXRAMTIz").header("Content-Type", "application/x-www-form-urlencoded").formParam("username","00201123");
+        RequestSpecification httprequest = RestAssured.given().header("Username","asapp-user").header("Password","secret@123").header("client_secret", "33C394254542453b839eCe485C4f055b").header("cuId", "2").header("Authorization", "Basic YXNhcHAtdXNlcjpzZWNyZXRAMTIz").header("Content-Type", "application/x-www-form-urlencoded").formParam("username","00201051");
         Response response = httprequest.post("/oauth/token");
         ResponseBody responsebody = response.getBody();
         String resopnse1= responsebody.asString();

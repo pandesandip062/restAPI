@@ -1,29 +1,26 @@
-
-
 {
   "partyMessage": {
     "partyList": {
       "party": [
         {
-          "id": "011340863",
           "taxInformationList": {
             "taxInformation": [
               {
-                "taxId": "71902902",
+                "taxId": "719029506",
                 "taxIdType": "Other",
                 "otherTaxIdType": "SIN"
               }
             ]
           },
-          "type": "Organization",
+          "type": "Individual",
           "characteristics": {
             "individual": {
-              "firstName": "Sandy",
-              "middleName":"Balaji",
-              "lastName": "Pande",
-              "prefix": "4",
-              "birthdate": "2023-03-31",
-              "gender": "Male",
+              "firstName": "ASAAP",
+              "middleName": "end",
+              "lastName": "Testing",
+              "prefix": "",
+              "birthdate": "1978-06-06",
+              "gender": "Female",
               "employmentList": {
                 "employment": [
                   {
@@ -40,7 +37,7 @@
                         },
                         {
                           "name": "occupationDesc",
-                          "value": "sandip"
+                          "value": "Dentists"
                         },
                         {
                           "name": "employmentIndustry",
@@ -53,18 +50,30 @@
               }
             }
           },
+          "identificationDocumentList": {
+            "identificationDocument": [
+              {
+                "idDocumentIdentifer": "123",
+                "idIssuedBy": "NS",
+                "idIssueDate": "2016-01-03",
+                "idExpirationDate": "2026-01-06",
+                "idDisplayOrder": 2,
+                "idVerifyDateTime": "2022-03-07"
+              }
+            ]
+          },
           "contactList": {
             "contact": [
               {
                 "contactType": "Address",
                 "contactPoint": {
                   "address": {
-                    "line1": "Pune",
-                    "line2": "Hinjewadi",
-                    "city": "Pune",
-                    "stateProvince": "MH",
-                    "postalCode": "411057",
-                    "countryCode": "IN",
+                    "line1": "1 Fourth St",
+                    "line2": "",
+                    "city": "Mount Pearl",
+                    "stateProvince": "NL",
+                    "postalCode": "A1N 2B2",
+                    "countryCode": "CA",
                     "addressType": "Mailing"
                   }
                 }
@@ -74,7 +83,7 @@
                 "contactPoint": {
                   "phone": {
                     "phoneType": "Mobile",
-                    "number": "0987654321"
+                    "number": "5142793325"
                   }
                 }
               },
@@ -83,42 +92,78 @@
                 "contactPoint": {
                   "email": {
                     "emailType": "Home",
-                    "address": "xyz@gmail.com"
+                    "address": "jbedell@leaguedata.ca"
                   }
                 }
               }
             ]
           },
-          "partyDateTimeCreated": "2023-03-23",
+          "partyDateTimeCreated": "2022-03-07",
           "customData": {
             "valuePair": [
               {
                 "name": "residencyForTaxPurposes",
-                "value": "AR"
+                "value": "CA"
               },
               {
                 "name": "branchNumber",
-                "value": "02"
+                "value": "01"
               },
               {
                 "name": "maritalStatus",
-                "value": "C"
+                "value": "M"
+              },
+              {
+                "name": "cem",
+                "value": "N"
+              },
+              {
+                "name": "privateAccountindicator",
+                "value": "True"
+              },
+              {
+                "name": "noSolicitationindicator",
+                "value": "True"
+              },
+              {
+                "name": "privateDate",
+                "value": "03/07/2022"
               },
               {
                 "name": "incomeRange",
-                "value": "O"
+                "value": "X"
               },
               {
                 "name": "usCitizenInd",
-                "value": "true"
+                "value": "false"
               },
               {
                 "name": "pefpIndicator",
-                "value": "1"
+                "value": "N"
               },
               {
                 "name": "hioIndicator",
                 "value": "N"
+              },
+              {
+                "name": "mdPac",
+                "value": "Spande061@"
+              },
+              {
+                "name": "memberDirectIndicator",
+                "value": "N"
+              },
+              {
+                "name": "otherId1Indicator",
+                "value": "1"
+              },
+              {
+                "name": "otherId1Type",
+                "value": "Photo"
+              },
+              {
+                "name": "otherId1OtherInfo",
+                "value": "123"
               }
             ]
           }

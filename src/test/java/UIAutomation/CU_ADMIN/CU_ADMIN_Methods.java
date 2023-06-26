@@ -18,7 +18,7 @@ public class CU_ADMIN_Methods {
     public void  createUser() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -29,7 +29,7 @@ public class CU_ADMIN_Methods {
     public void  viewUser() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -39,7 +39,7 @@ public class CU_ADMIN_Methods {
     public void  editUser() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -50,7 +50,7 @@ public class CU_ADMIN_Methods {
     public void  deleteUser() throws InterruptedException, IOException {
         ap = new AccssPOM(driver);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -59,7 +59,7 @@ public class CU_ADMIN_Methods {
     }
     public void viewClient() throws InterruptedException {
             ap = new AccssPOM(driver);
-            ap.username("CUAdmin_User");
+            ap.username("Admin_Officer");
             ap.pass("Mambu@1234");
             ap.login();
             ap.selectBranch();
@@ -75,7 +75,7 @@ public class CU_ADMIN_Methods {
     }
     public void viewRoles() throws InterruptedException {
         ap = new AccssPOM(driver);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -85,7 +85,7 @@ public class CU_ADMIN_Methods {
     }
     public void editRoles() throws IOException, InterruptedException {
         ap = new AccssPOM(driver);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -95,7 +95,7 @@ public class CU_ADMIN_Methods {
     }
     public void deleteRoles() throws IOException, InterruptedException {
         ap = new AccssPOM(driver);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -105,7 +105,7 @@ public class CU_ADMIN_Methods {
     }
     public void createRoles() throws IOException, InterruptedException {
         ap = new AccssPOM(driver);
-        ap.username("CUAdmin_User");
+        ap.username("Admin_Officer");
         ap.pass("Mambu@1234");
         ap.login();
         ap.selectBranch();
@@ -124,8 +124,6 @@ public class CU_ADMIN_Methods {
         ap.serchuser("dele");
         Thread.sleep(2000);
         ap.Selectuser();
-        ap.editClientCTA();
-        ap.editClientCTA();
         ap.editClient();
     }
     public void clientAssociation() throws InterruptedException, IOException {
@@ -138,7 +136,7 @@ public class CU_ADMIN_Methods {
         ap.serchuser("dele");
         Thread.sleep(2000);
         ap.Selectuser();
-        ap.editClientCTA();
+
         ap.clientAssociation();
 
 

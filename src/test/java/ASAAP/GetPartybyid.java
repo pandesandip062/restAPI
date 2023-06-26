@@ -24,27 +24,30 @@ public class GetPartybyid {
         RestAssured.baseURI = "https://np-api.leaguedata.ca:443/int1/asapp-eapi/v1";
 
 
-        RequestSpecification httprequest = RestAssured.given().header("Username", "asapp-user").header("Password", "secret@123").header("client_secret", "33C394254542453b839eCe485C4f055b").header("cuId", "2").header("Authorization", "Basic YXNhcHAtdXNlcjpzZWNyZXRAMTIz").header("Content-Type", "application/x-www-form-urlencoded").formParam("username", "00201123");
+        RequestSpecification httprequest = RestAssured.given().header("Username", "asapp-user").header("Password", "secret@123").header("client_secret", "33C394254542453b839eCe485C4f055b").header("cuId", "2").header("Authorization", "Basic YXNhcHAtdXNlcjpzZWNyZXRAMTIz").header("Content-Type", "application/x-www-form-urlencoded").formParam("username", "00201051");
         Response response = httprequest.post("/oauth/token");
         ResponseBody responsebody = response.getBody();
         String resopnse1 = responsebody.asString();
-       // System.out.println(resopnse1);
+        System.out.println(resopnse1);
 
         JsonPath jsonpathview = responsebody.jsonPath();
 
         String accesstoken = jsonpathview.get("access_token");
         String ac1 = "Bearer "+accesstoken;
-
+        System.out.println(accesstoken);
 
         String tokentype = jsonpathview.get("token_type");
+
         Assert.assertEquals(tokentype,"bearer");
+
+        System.out.println(ac1);
+
+
 
         RestAssured.baseURI = "https://np-api.leaguedata.ca/int1/asapp-eapi/v1";
 
-        RequestSpecification httprequest1 = RestAssured.given().header("X-Tenant-ID", "at_sydney").header("Content-Type", "application/json").header("Authorization",ac1);
-
-
-        Response response1 = httprequest1.request(Method.GET, "/PartyMessage/011442304");
+        RequestSpecification httprequest1 =  RestAssured.given().header("Content-Type", "application/json").header("Authorization","Bearer ewogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkhTMjU2Igp9.ewogICJzdWIiOiAiMDAyMDEwNTEiLAogICJuYW1lIjogIkFTQUFQIFRlc3RlcjEiLAogICJpYXQiOiAxNjg4NDc0OTM3LAogICJleHAiOiAxNjg4NDc4NTM3LAogICJpbnN0aXR1dGlvbiI6ICIwMDIiCn0.MxHk2ZWpBqSQzO6fGBtSs5wqtVLelO65MfCe4fcEssY");
+        Response response1 = httprequest1.request(Method.GET,"/PartyMessage/011442304");
 
         ResponseBody responsebody1 = response1.getBody();
         String resonsebody1 = responsebody1.asString();

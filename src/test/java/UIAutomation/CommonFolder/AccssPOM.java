@@ -54,7 +54,7 @@ public class AccssPOM {
     WebElement UserPW;
     @FindBy(xpath = "//input[@id='gwt-debug-searchInput']")
     WebElement Search;
-    @FindBy(xpath = "//div[text()='delete client']")
+    @FindBy(xpath = "(//div[text()='ACU_Representative 005'])")
     WebElement selectUser;
     @FindBy(xpath = "//span[text()='Sandip Balaji Pandeye']")
     WebElement User;
@@ -164,6 +164,12 @@ public class AccssPOM {
     WebElement clientAssociationCTA;
     @FindBy(xpath = "//a[text()='Users']")
     WebElement viewUserCTA;
+    @FindBy(xpath = "//button[@id='gwt-debug-closeButton']")
+    WebElement Close;
+    @FindBy(xpath = "//button[@id='gwt-debug-saveAnywayButton']")
+    WebElement SaveAnywayCTA;
+
+
 
 
 
@@ -176,9 +182,12 @@ public class AccssPOM {
         ut= new Utility(driver);
 
     }
-   public void editClientCTA(){
-       editClientCTA.click();
-   }
+
+    public void close(){
+        Close.click();
+    }
+
+
     public void confirmIdentity(){
         confirmIdentity.click();
     }
@@ -352,15 +361,18 @@ public class AccssPOM {
         EditTaskCTA.click();
         Thread.sleep(4000);
         ut.takesacreenshot();
-
         SaveTask.click();
     }
     public void editClient() throws IOException, InterruptedException {
-       Thread.sleep(4000);
+        editClientCTA.click();
+       // branch.click();
+        Thread.sleep(4000);
         ut.takesacreenshot();
         JavascriptExecutor js =(JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,5000)");
         SaveUSer.click();
+        //SaveAnywayCTA.click();
+
 
     }
     public void clientAssociation() throws InterruptedException, IOException {
