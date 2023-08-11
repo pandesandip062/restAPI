@@ -5,7 +5,6 @@
             <class name="ASAAP.putParty"/>
             <class name="ASAAP.Post_Token"/>
             <class name="ASAAP.PostParty"></class>
-            <class name="UIAutomation.BR_MGR.testClassforBG_MGR"></class>
         </classes>
     </test>
 </suite>
