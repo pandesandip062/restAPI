@@ -1,6 +1,3 @@
-urnpsmtaekguibcj
-
-
 pipeline{
 agent any
 stages
