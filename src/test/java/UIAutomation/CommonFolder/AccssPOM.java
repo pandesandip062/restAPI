@@ -54,7 +54,7 @@ public class AccssPOM {
     WebElement UserPW;
     @FindBy(xpath = "//input[@id='gwt-debug-searchInput']")
     WebElement Search;
-    @FindBy(xpath = "(//div[text()='ACU_Representative 005'])")
+    @FindBy(xpath = "(//div[text()='delete client'])")
     WebElement selectUser;
     @FindBy(xpath = "//span[text()='Sandip Balaji Pandeye']")
     WebElement User;
@@ -64,6 +64,9 @@ public class AccssPOM {
     WebElement SaveUSer;
     @FindBy(xpath = "//td[@id='administrationTab']")
     WebElement administatorCTA;
+    @FindBy(xpath = "//span[text()='Branch Banking Member']")
+    WebElement BankBarching;
+
     @FindBy(xpath = "//div[@id='tasksTab']")
     WebElement TaskCTA;
     @FindBy(xpath = "//button[text()='New Task']")
@@ -169,6 +172,12 @@ public class AccssPOM {
     @FindBy(xpath = "//button[@id='gwt-debug-saveAnywayButton']")
     WebElement SaveAnywayCTA;
 
+    @FindBy(xpath = "//a[text()='Member Access Cards']")
+    WebElement MEMCard;
+
+    @FindBy(xpath = "(//input[@type='radio'] | //td[text()[contains(.,'Embossed')]])[1]")
+    WebElement SelectCard;
+
 
 
 
@@ -181,6 +190,17 @@ public class AccssPOM {
         PageFactory.initElements(driver,this);
         ut= new Utility(driver);
 
+    }
+
+    public void selectCard(){
+        SelectCard.click();
+    }
+
+    public void bankbraching(){
+        BankBarching.click();
+    }
+    public void MEM(){
+        MEMCard.click();
     }
 
     public void close(){

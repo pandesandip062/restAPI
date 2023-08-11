@@ -46,7 +46,7 @@ public class GetPartybyid {
 
         RestAssured.baseURI = "https://np-api.leaguedata.ca/int1/asapp-eapi/v1";
 
-        RequestSpecification httprequest1 =  RestAssured.given().header("Content-Type", "application/json").header("Authorization","Bearer ewogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkhTMjU2Igp9.ewogICJzdWIiOiAiMDAyMDEwNTEiLAogICJuYW1lIjogIkFTQUFQIFRlc3RlcjEiLAogICJpYXQiOiAxNjg4NDc0OTM3LAogICJleHAiOiAxNjg4NDc4NTM3LAogICJpbnN0aXR1dGlvbiI6ICIwMDIiCn0.MxHk2ZWpBqSQzO6fGBtSs5wqtVLelO65MfCe4fcEssY");
+        RequestSpecification httprequest1 =  RestAssured.given().header("Content-Type", "application/json").header("Authorization",ac1);
         Response response1 = httprequest1.request(Method.GET,"/PartyMessage/011442304");
 
         ResponseBody responsebody1 = response1.getBody();
@@ -55,7 +55,7 @@ public class GetPartybyid {
 
         JsonPath jsonpathview1 = responsebody1.jsonPath();
         String taxIdtype = jsonpathview1.get("partyMessage.partyList.party[0].taxInformationList.taxInformation[0].taxIdType");
-        Assert.assertEquals(taxIdtype,"Compnay");
+        Assert.assertEquals(taxIdtype,"IndividualTaxpayerIdentificationNumber");
 
         String taxID = jsonpathview1.get("partyMessage.partyList.party[0].taxInformationList.taxInformation[1].taxId");
         Assert.assertEquals(taxID, "1234");

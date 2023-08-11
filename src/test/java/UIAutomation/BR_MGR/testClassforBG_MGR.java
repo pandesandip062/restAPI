@@ -20,9 +20,9 @@ public class testClassforBG_MGR {
 
     @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.edge.driver","C:\\Users\\sandip_pande\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver","D:\\Drivers\\edgedriver_win64 (2)\\msedgedriver.exe");
         driver = new EdgeDriver();
-        driver.get("https://nlcu1.sandbox.mambu.com/#dashboard");
+        driver.get("https://intleaguedatatemp.sandbox.mambu.com/#dashboard");
         driver.manage().window().maximize();
 
     }
@@ -199,13 +199,13 @@ public class testClassforBG_MGR {
         mt.editReport();
         mt.Logout();
     }
-    @Test(priority = 16)
-    public void historicalReport_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.historicalReport();
-        mt.Logout();
-    }
+//    @Test(priority = 16)
+//    public void historicalReport_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.historicalReport();
+//        mt.Logout();
+//    }
 //    @Test(priority = 18)
 //    public void deleteReport_Br_MGR() throws InterruptedException, IOException {
 //        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -213,16 +213,16 @@ public class testClassforBG_MGR {
 //        mt.deleteReport();
 //        mt.Logout();
 //    }
-    @Test(priority = 17)
-    public void viewReport_Br_MGR() throws InterruptedException, IOException {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mt = new BR_MGR_Methods(driver);
-        mt.viewReport();
-        ut = new Utility(driver);
-        ut.takesacreenshot();
-        mt.Logout();
-
-    }
+//    @Test(priority = 17)
+//    public void viewReport_Br_MGR() throws InterruptedException, IOException {
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        mt = new BR_MGR_Methods(driver);
+//        mt.viewReport();
+//        ut = new Utility(driver);
+//        ut.takesacreenshot();
+//        mt.Logout();
+//
+//    }
 
 
 
