@@ -9,6 +9,11 @@ echo "Building the code....."
 bat "mvn clean"
 }
 }
+post{
+success{
+emailext body: 'Email sent out from Jenkins', subject: 'Jenkins Build', to: 'pandesandip062@gmail.com'
+}
+}
 stage('Test')
 {
 steps{
