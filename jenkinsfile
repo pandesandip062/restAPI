@@ -10,9 +10,11 @@ bat "mvn clean"
 }
 }
 stages
+{
 post{
 success{
 emailext body: 'Email sent out from Jenkins', subject: 'Jenkins Build', to: 'pandesandip062@gmail.com'
+}
 }
 }
 stage('Test')
