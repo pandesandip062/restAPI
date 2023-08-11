@@ -1,41 +1,13 @@
 pipeline{
 agent any
-stages
-{
-stage('Build')
-{
-steps{
-echo "Building the code....."
-bat "mvn clean"
+stages{
+stage("Build"){
+echo "Building the project"
 }
 }
-stage
-{
 post{
 success{
-emailext body: 'Email sent out from Jenkins', subject: 'Jenkins Build', to: 'pandesandip062@gmail.com'
-}
-}
-}
-stage('Test')
-{
-steps{
-echo "Testing the code....."
-bat "mvn test"
-}
-}
-stage('Compile')
-{
-steps{
-echo "Compiling the code......"
-bat "mvn compile"
-}
-}
-stage('Deploy')
-{
-steps{
-echo"Deploying the code"
-}
+emailext body: 'testing email', subject: 'Test Email', to: 'pandesandip062@gmail.com'
 }
 }
 }
