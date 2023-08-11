@@ -38,3 +38,4 @@ stage('Email Notification'){
   mail bcc: '', body: 'Hi Sabdio', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'pandesandip062@gmail.com'
 }
 }
+}
