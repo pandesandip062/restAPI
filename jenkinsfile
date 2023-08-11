@@ -9,6 +9,7 @@ echo "Building the code....."
 bat "mvn clean"
 }
 }
+stages
 post{
 success{
 emailext body: 'Email sent out from Jenkins', subject: 'Jenkins Build', to: 'pandesandip062@gmail.com'
@@ -32,10 +33,6 @@ stage('Deploy')
 {
 steps{
 echo"Deploying the code"
-}
-}
-stage('Email Notification'){
-  mail bcc: '', body: 'Hi Sabdio', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'pandesandip062@gmail.com'
 }
 }
 }
