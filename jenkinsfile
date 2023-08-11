@@ -9,7 +9,7 @@ echo "Building the code....."
 bat "mvn clean"
 }
 }
-stages
+stage
 {
 post{
 success{
