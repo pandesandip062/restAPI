@@ -20,7 +20,7 @@ public class testClassforBG_MGR {
 
     @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.edge.driver","D:\\Drivers\\edgedriver_win64 (2)\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver",".//drivers/msedgedriver.exe");
         driver = new EdgeDriver();
         driver.get("https://intleaguedatatemp.sandbox.mambu.com/#dashboard");
         driver.manage().window().maximize();
