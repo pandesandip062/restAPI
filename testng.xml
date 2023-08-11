@@ -5,6 +5,7 @@
             <class name="ASAAP.putParty"/>
             <class name="ASAAP.Post_Token"/>
             <class name="ASAAP.PostParty"></class>
+            <class name="Br_MGR.teestClassforBG_MGR"></class>
         </classes>
     </test>
 </suite>
