@@ -9,11 +9,10 @@ echo "Building the code....."
 bat "mvn clean"
 }
 }
-Post{
 success{
 emailext body: 'testing email', subject: 'Test Email', to: 'pandesandip062@gmail.com'
 }
-}
+
 stage('Test')
 {
 steps{
