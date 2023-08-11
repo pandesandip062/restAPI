@@ -1,7 +1,7 @@
 pipeline{
 agent any
-stages{
-stage("Build"){
+Stages{
+Stage("Build"){
 steps{
 echo "Building the project"
 }
@@ -9,7 +9,6 @@ echo "Building the project"
 post{
 success{
 emailext body: 'testing email', subject: 'Test Email', to: 'pandesandip062@gmail.com'
-}
 }
 }
 }
