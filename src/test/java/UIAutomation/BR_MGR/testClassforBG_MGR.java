@@ -4,6 +4,7 @@ import UIAutomation.BR_MGR.BR_MGR_Methods;
 import UIAutomation.CommonFolder.AccssPOM;
 import UIAutomation.CommonFolder.Utility;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -20,8 +21,8 @@ public class testClassforBG_MGR {
 
     @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.edge.driver",".//drivers/msedgedriver.exe");
-        driver = new EdgeDriver();
+        System.setProperty("webdriver.chrome.driver",".//drivers/chromedriver.exe");
+        driver = new ChromeDriver();
         driver.get("https://intleaguedatatemp.sandbox.mambu.com/#dashboard");
         driver.manage().window().maximize();
 
